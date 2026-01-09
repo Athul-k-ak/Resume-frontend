@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Check } from 'lucide-react';
-import '../styles/SelectTemplate.css';
+import '../styles/SelectTemplate_.css';
 
 import modernImage from '../assets/templates/Modern.jpeg';
 import professionalImage from '../assets/templates/professional.jpeg';

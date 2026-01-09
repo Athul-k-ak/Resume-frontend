@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/Loader.css';
+import '../../styles/Loader_.css';
 
 const Loader = ({ fullScreen = false, size = 'medium', text = 'Loading...' }) => {
     const loaderClass = `loader-container ${fullScreen ? 'loader-fullscreen' : ''} ${size}`;

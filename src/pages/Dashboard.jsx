@@ -7,7 +7,7 @@ import ModernTemplate from '../components/templates/ModernTemplate';
 import ProfessionalTemplate from '../components/templates/ProfessionalTemplate';
 import html2pdf from 'html2pdf.js';
 import DownloadResumePopup from '../components/templates/DownloadResumePopup';
-import '../styles/Dashboard.css';
+import '../styles/Dashboard_.css';
 import DeleteConfirmationModal from '../components/common/DeleteConfirmationModal';
 import Toast from '../components/common/Toast';
 

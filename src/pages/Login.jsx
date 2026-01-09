@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Mail, Lock, Eye, EyeOff, LogIn } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
-import '../styles/Auth.css';
+import '../styles/Auth_.css';
 
 const Login = () => {
     const navigate = useNavigate();

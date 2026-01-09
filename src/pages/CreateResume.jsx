@@ -38,7 +38,7 @@ import { CSS } from '@dnd-kit/utilities';
 import resumeService from '../services/resumeService';
 import ModernTemplate from '../components/templates/ModernTemplate';
 import ProfessionalTemplate from '../components/templates/ProfessionalTemplate';
-import '../styles/CreateResume.css';
+import '../styles/CreateResume_.css';
 import { uploadProfileImage } from '../services/uploadService';
 import ImageCropper from '../components/common/ImageCropper';
 import Toast from '../components/common/Toast';

@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import heroImage from '../assets/images/image2.jpg';
-import '../styles/Home.css';
+import '../styles/Home_.css';
 
 const Home = () => {
     const { isAuthenticated } = useAuth();

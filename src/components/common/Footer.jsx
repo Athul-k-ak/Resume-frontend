@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FileText, Github, Twitter, Linkedin, Mail } from 'lucide-react';
-import '../../styles/Footer.css';
+import '../../styles/Footer_.css';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
