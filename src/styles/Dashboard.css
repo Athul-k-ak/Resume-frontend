@@ -1,0 +1,222 @@
+.dashboard {
+    padding: var(--spacing-3xl) 0;
+    min-height: calc(100vh - 80px);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.header-content {
+    flex: 1;
+}
+
+.dashboard-title {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.dashboard-subtitle {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-muted);
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl);
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+}
+
+.stat-icon {
+    flex-shrink: 0;
+}
+
+.stat-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.stat-value {
+    font-size: var(--font-size-3xl);
+    font-weight: 800;
+    font-family: var(--font-heading);
+    color: var(--color-text-primary);
+}
+
+.stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.resumes-section {
+    margin-top: var(--spacing-3xl);
+}
+
+.section-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.resumes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.resume-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+
+.resume-preview {
+    background: var(--gradient-dark);
+    padding: var(--spacing-md);
+    border-bottom: 1px solid var(--color-border);
+    height: 220px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.thumbnail-wrapper {
+    width: 210mm;
+    height: 297mm;
+    background: white;
+    transform: scale(0.24);
+    transform-origin: top center;
+    pointer-events: none;
+    box-shadow: var(--shadow-xl);
+    border-radius: var(--radius-sm);
+}
+
+.preview-header {
+    width: 60%;
+    height: 20px;
+    background: linear-gradient(90deg, #e0e0e0 0%, #f0f0f0 100%);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.preview-line {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #e0e0e0 0%, #f0f0f0 100%);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.preview-line.short {
+    width: 70%;
+}
+
+.resume-info {
+    padding: var(--spacing-lg);
+    flex: 1;
+}
+
+.resume-title {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-primary);
+}
+
+.resume-meta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+.resume-template {
+    color: var(--color-primary-light);
+}
+
+.resume-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg);
+    padding-top: 0;
+}
+
+.resume-actions .btn {
+    flex: 1;
+}
+
+.delete-btn {
+    flex: 0;
+    color: #ef4444;
+}
+
+.delete-btn:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: #ef4444;
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-3xl);
+    text-align: center;
+    min-height: 400px;
+}
+
+.empty-icon {
+    color: var(--color-text-muted);
+    opacity: 0.5;
+    margin-bottom: var(--spacing-xl);
+}
+
+.empty-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+}
+
+.empty-description {
+    font-size: var(--font-size-base);
+    color: var(--color-text-muted);
+    max-width: 500px;
+    margin-bottom: var(--spacing-xl);
+}
+
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+    }
+
+    .dashboard-header .btn {
+        width: 100%;
+    }
+
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .resumes-grid {
+        grid-template-columns: 1fr;
+    }
+}
